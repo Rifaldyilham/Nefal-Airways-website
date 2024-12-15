@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icon.png">
+    <title>Nefal Airways</title>
+
+    <!-- vendor link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Maiden+Orange&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet"/>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="top-bar">
+        <div class="container">
+            <ul class="top-contacts">
+                <li data-aos="fade-down" data-aos-delay="100" class="top-unhover">
+                    <p><span class="fa fa-phone-square" aria-hidden="true"></span> 082136579945 </p>
+                </li>
+                <li data-aos="fade-down" data-aos-delay="200" class="top-unhover">
+                    <p><span class="fab fa-whatsapp" aria-hidden="true"></span> 085233364701</a></p>
+                </li>
+                <li data-aos="fade-down" data-aos-delay="300" class="top-hover">
+                    <p><span class="fa fa-envelope" aria-hidden="true"></span> <a
+                            href="mailto:callcenter@nefal-airways.com">callcenter@nefal-airways.com</a></p>
+                </li>
+            </ul>
+            <ul class="top-links">
+                <li data-aos="fade-down" data-aos-delay="400"><a href="https://www.instagram.com/neo_da_vierro/"
+                        target="_blank" class="icon"><i class="fab fa-instagram" style="font-size:20px"></i></a></li>
+                <li data-aos="fade-down" data-aos-delay="500"><a href="https://twitter.com/ManUtd" target="_blank"
+                        class="icon"><i class="fab fa-twitter" style="font-size:20px"></i></a></li>
+                <li data-aos="fade-down" data-aos-delay="600"><a href="mailto:callcenter@nefal-airways.com"
+                        class="icon"><i class="fa-solid fa-envelope" style="font-size:20px"></i></a></li>
+                <li data-aos="fade-down" data-aos-delay="700"><a href="https://www.instagram.com/rifaldyilhm/"
+                        target="_blank" class="icon"><i class="fab fa-instagram" style="font-size:20px"></i></a></li>
+            </ul>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a data-aos="zoom-in" data-aos-delay="400" class="navbar-brand" href="#"><img src="image/web.png" alt="Logo"
+                    class="logo-img"></a>
+
+            <button data-aos="fade-in" data-aos-delay="400" class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li data-aos="zoom-in" data-aos-delay="100" class="nav-item"><a class="nav-link"
+                            href="#carouselExample">Home</a></li>
+                    <li data-aos="zoom-in" data-aos-delay="200" class="nav-item"><a class="nav-link"
+                            href="#aircraft">Aircraft</a></li>
+                    <li data-aos="zoom-in" data-aos-delay="300" class="nav-item"><a class="nav-link"
+                            href="#profile">Profile</a></li>
+                    <li data-aos="zoom-in" data-aos-delay="400" class="nav-item"><a class="nav-link" href="#"
+                            id="routeNav">Route</a></li>
+                    <li data-aos="zoom-in" data-aos-delay="500" class="nav-item"><a class="nav-link" href="#"
+                            id="aviationSecurityModalTrigger">Career</a></li>
+                    <li data-aos="zoom-in" data-aos-delay="600" class="nav-item"><a class="nav-link"
+                            href="#contact">Office</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Route Section -->
+    <div id="routePopup" class="popup hidden" >
+        <div class="popup-content" >
+            <h2 class="popup-title">Route of Nefal Airways</h2>
+
+            <!-- Java Routes Section -->
+            <div class="route-section">
+                <h4 class="route-title">Java</h4>
+                <table class="route-table">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Depart from</th>
+                            <th>Destination 1</th>
+                            <th>Destination 2</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>SOLO</td>
+                            <td>Madiun</td>
+                            <td>Surabaya</td>
+                            <td>VV</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>SOLO</td>
+                            <td>Bandung</td>
+                            <td>Jakarta</td>
+                            <td>VV</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Madiun</td>
+                            <td>Solo</td>
+                            <td>Yogyakarta</td>
+                            <td>VV</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>SOLO</td>
+                            <td>Banten</td>
+                            <td>--</td>
+                            <td>VV</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Madiun</td>
+                            <td>Jakarta</td>
+                            <td>Bandung</td>
+                            <td>VV (Offline)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- International Routes Section -->
+            <div class="route-section">
+                <h4 class="route-title">International</h4>
+                <table class="route-table">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Depart from</th>
+                            <th>Destination 1</th>
+                            <th>Destination 2</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>SOLO</td>
+                            <td>Uni Emirat Arab</td>
+                            <td>Turki</td>
+                            <td>VVV</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>SOLO</td>
+                            <td>Brazil</td>
+                            <td>Portugal</td>
+                            <td>VVV</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Madiun</td>
+                            <td>Uni Emirat Arab</td>
+                            <td>Iran</td>
+                            <td>VVV</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Madiun</td>
+                            <td>Jepang</td>
+                            <td>Korea Selatan</td>
+                            <td>VVV</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Footer Section -->
+            <div class="popup-footer">
+                <button type="button" class="btn btn-primary" id="closePopup">Close</button>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="hidden"></div>
+
+    <!-- Career Section -->
+    <div class="modal fade" id="aviationSecurityModal" tabindex="-1" aria-labelledby="aviationSecurityModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="aviationSecurityModalLabel" align="center">Aviation Security</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="tg">
+                        <tr>
+                            <td>
+                                <h4><b>Persyaratan:</b></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1. Pria</td>
+                        </tr>
+                        <tr>
+                            <td>2. Usia Max 25 Tahun (Belum Menikah diutamakan)</td>
+                        </tr>
+                        <tr>
+                            <td>3. Pendidikan min SMA</td>
+                        </tr>
+                        <tr>
+                            <td>4. Mempunyai minimal License Basic Avsec dan Valid</td>
+                        </tr>
+                        <tr>
+                            <td>5. Pengalaman / Non Pengalaman</td>
+                        </tr>
+                        <tr>
+                            <td>6. Memiliki wawasan di dunia penerbangan (diutamakan)</td>
+                        </tr>
+                        <tr>
+                            <td>7. Bisa bekerja dalam tim</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4><b>Cara Melamar:</b></h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1. Surat lamaran</td>
+                        </tr>
+                        <tr>
+                            <td>2. Curriculum Vitae</td>
+                        </tr>
+                        <tr>
+                            <td>3. Copy ID/KTP</td>
+                        </tr>
+                        <tr>
+                            <td>4. Photo 4x6 2 Lembar</td>
+                        </tr>
+                        <tr>
+                            <td>5. Avsec License</td>
+                        </tr>
+                    </table>
+                    <tr>* Kirim Lamaran ke <a href="#">callcenter@nefal-airways.com</a></tr>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero position-relative">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/Mekah.png" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/Rio.png" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/Douro.png" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/Iran.png" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/Korsel.png" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/Istanbul.png" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <div class="slidebutton">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Book Flight Form -->
+        <div data-aos="fade-right" data-aos-delay="150" id="bookingForm" class="form-container">
+            <div class="tabs">
+                <button id="bookFlightTab" class="active">Book Flight</button>
+                <button id="manageBookingTab">Manage Booking</button>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <select class="form-select" id="departure" required>
+                        <option value="" disabled selected>city ​​of departure</option>
+                        <option>Solo</option>
+                        <option>Madiun</option>
+                        <option>Yogyakarta</option>
+                        <option>Surabaya</option>
+                        <option>Bandung</option>
+                        <option>Jakarta</option>
+                        <option>Banten</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <select class="form-select" id="destination" required>
+                        <option value="" disabled selected>destination</option>
+                        <option>Solo</option>
+                        <option>Madiun</option>
+                        <option>Yogyakarta</option>
+                        <option>Surabaya</option>
+                        <option>Bandung</option>
+                        <option>Jakarta</option>
+                        <option>Banten</option>
+                        <option>Uni emirat Arab</option>
+                        <option>Turki</option>
+                        <option>Brazil</option>
+                        <option>Portugal</option>
+                        <option>Iran</option>
+                        <option>Jepang</option>
+                        <option>Korea Selatan</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <input type="date" class="form-control" id="departureDate" placeholder="Tanggal Keberangkatan"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="passengers" min="1" placeholder="number of tickets"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <select class="form-select" id="class" required>
+                        <option value="" disabled selected>Select a class</option>
+                        <option>economy</option>
+                        <option>Bussines</option>
+                        <option>First Class</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn w-100">Look for tickets</button>
+            </form>
+        </div>
+
+        <!-- Manage Booking Form -->
+        <div data-aos="fade-right" data-aos-delay="150" id="manageBookingForm" class="form-container"
+            style="display: none;">
+            <div class="tabs">
+                <button id="bookFlightTab">Book Flight</button>
+                <button id="manageBookingTab" class="active">Manage Booking</button>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="bookingReference" placeholder="Booking Reference"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <button type="submit" class="btn w-100">Update Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Aircraft Section -->
+    <section id="aircraft" class="gallery section-bg">
+        <div class="container-aircraft">
+            <div data-aos="fade-down" data-aos-delay="100" class="section-title">
+                <h2>Aircraft</h2>
+                <p>Check Our <span>Aircraft</span></p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="450" class="gallery-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="image/pesawat 1.jpg"><img
+                                src="image/pesawat 1.jpg" class="img-fluid" alt="" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="image/pesawat 2.jpg"><img
+                                src="image/pesawat 2.jpg" width="250px" height="200px" class="img-fluid" alt="" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="image/pesawat 3.jpg"><img
+                                src="image/pesawat 3.jpg" class="img-fluid" alt="" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="image/pesawat 4.jpg"><img
+                                src="image/pesawat 4.jpg" class="img-fluid" alt="" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="image/pesawat 5.jpg"><img
+                                src="image/pesawat 5.jpg" class="img-fluid" alt="" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="image/pesawat 6.jpg"><img
+                                src="image/pesawat 6.jpg" class="img-fluid" alt="" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="image/pesawat 7.jpg"><img
+                                src="image/pesawat 7.jpg" class="img-fluid" alt="" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="glightbox" data-gallery="images-gallery" href="image/pesawat 8.jpg"><img
+                                src="image/pesawat 8.jpg" class="img-fluid" alt="" /></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- profil section -->
+    <section id="profile" class="profile-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h2 data-aos="fade-down" data-aos-delay="350" class="section-title">Profile Nefal Airways</h2>
+                    <p data-aos="fade-right" data-aos-delay="50">
+                        &emsp;Nefal Airways berkomitmen untuk memberikan layanan penerbangan yang aman, nyaman, dan
+                        terjangkau, dengan fokus pada efisiensi operasional dan pengalaman pelanggan yang luar biasa.
+                        Sebagai maskapai yang dibangun dengan semangat inovasi, Nefal Airways terus berkembang untuk
+                        memenuhi kebutuhan perjalanan udara yang semakin beragam.
+                    </p>
+                    <p data-aos="fade-right" data-aos-delay="100">
+                        &emsp;Nefal Airways didirikan pada tahun 2024 oleh dua pengusaha muda, Neo dan Rifaldy, yang
+                        berbagi visi untuk membawa perubahan dalam industri penerbangan. Dengan latar belakang mereka
+                        yang berbeda namun saling melengkapi, keduanya memiliki tujuan yang sama: menciptakan maskapai
+                        yang tidak hanya fokus pada keuntungan, tetapi juga pada kualitas layanan dan kepuasan
+                        pelanggan.
+                    </p>
+                    <p data-aos="fade-right" data-aos-delay="150">
+                        &emsp;Kini, Nefal Airways terus berkomitmen untuk menjadi pilihan utama bagi pelancong yang
+                        mencari penerbangan dengan layanan berkualitas, harga yang bersaing, dan pengalaman terbang yang
+                        tidak terlupakan.
+                    </p>
+                    <a href="corporate.html" class="button">Read More</a>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img data-aos="zoom-out" data-aos-delay="500" src="image/cloud_left.png" alt="Awan 3D"
+                        class="img-fluid cloud-image">
+                    <img src="image/plane.png" alt="Pesawat 3D"
+                        class="img-fluid plane-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- office section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div data-aos="fade-down" data-aos-delay="450" class="section-title">
+                <h2>Head Office</h2>
+            </div>
+
+            <div data-aos="fade-down" data-aos-delay="400" class="mb-3">
+                <iframe style="border: 0; width: 100%; height: 350px; border-radius: 30px 30px 0 0;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2666.5613804178342!2d110.75576177264317!3d-7.515851964925264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1372ba370a85%3A0x22d08547623e7ddd!2sAdi%20Soemarmo%20Airport!5e0!3m2!1sen!2sid!4v1733821780497!5m2!1sen!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+            </div>
+            <!-- End Google Maps -->
+
+            <div class="row gy-4">
+                <div data-aos="fade" data-aos-delay="100" class="col-md-6">
+                    <div class="info-item d-flex align-items-center">
+                        <i class="icon fa-regular fa-map flex-shrink-0"></i>
+                        <div>
+                            <h3>Our Address</h3>
+                            <p>Road Bandara Adi Sumarmo, Kec. Ngemplak, Kabupaten Boyolali, Jawa Tengah 57108</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div data-aos="fade" data-aos-delay="150" class="col-md-6">
+                    <div class="info-item d-flex align-items-center">
+                        <i class="icon fa-solid fa-envelope flex-shrink-0"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>callcenter@nefal-airways.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div data-aos="fade" data-aos-delay="200" class="col-md-6">
+                    <div class="info-item d-flex align-items-center" style="border-radius: 0 0 0 30px;">
+                        <i class="icon fa-solid fa-phone flex-shrink-0"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p><strong>Phone: </strong>082136579945 <span>&emsp; <strong>WhatsApp: </strong>
+                                    085233364701</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Info Item -->
+
+                <div class="col-md-6">
+                    <div data-aos="fade" data-aos-delay="300" class="info-item d-flex align-items-center"
+                        style="border-radius: 0 0 30px 0;">
+                        <i class="icon fa-solid fa-clock flex-shrink-0"></i>
+                        <div>
+                            <h3>Operasional Hours</h3>
+                            <div>
+                                <strong>Monday-Sunday:</strong> 7 AM - 7 PM;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="500" class="align-items-center text-center">
+                    <p>
+                        Hubungi kami untuk informasi penerbangan, layanan pelanggan, atau kebutuhan perjalanan lainnya.
+                        Kami siap melayani Anda dengan sepenuh hati.
+                    </p>
+                </div>
+                <!-- End Info Item -->
+            </div>
+        </div>
+        <!--End Contact Form -->
+        </div>
+    </section>
+
+    <img data-aos="fade-up" data-aos-delay="200" src="image/sil.png" alt="" style="max-width: 100%;">
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Spokesperson Section -->
+                <div class="col-md-6 mb-4">
+                    <div class="spokesperson d-flex align-items-center">
+                        <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                            src="image/owner1.jpeg" alt="Spokesperson Photo" class="profile-photo">
+                        <div data-aos="fade-right" data-aos-delay="200" class="info ms-3">
+                            <h5>Spokesperson</h5>
+                            <p>Mr. Neonardo Vierro</p>
+                            <p>(Dy. Director, Marketing Department)</p>
+                            <p>WhatsApp: 085233364701</p>
+                            <p>Email: rifaldyilham01@student.uns.ac.id</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="col-md-6 mb-4">
+                    <div class="contact d-flex align-items-center">
+                        <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                            src="image/owner2.JPG" alt="Information Officer Photo" class="profile-photo">
+                        <div data-aos="fade-right" data-aos-delay="200" class="info ms-3">
+                            <h5>Information Officer</h5>
+                            <p>Mr. Rifaldy Ilham Nasrulloh</p>
+                            <p>(Dy. Director, Corporate Department)</p>
+                            <p>Tel: 082136579945</p>
+                            <p>Email: neonardo_vierro@student.uns.ac.id</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Ticketing Information -->
+                <div class="ticketing d-flex justify-content-center">
+                    <div class="col-12">
+                        <h5 data-aos="fade" data-aos-delay="100">For International Ticketing</h5>
+                        <p data-aos="fade" data-aos-delay="200"><i class="fa fa-phone-square"></i> 082136579945</p>
+                        <p data-aos="fade" data-aos-delay="300">Email: lanacpx@gmail.com / neodasilva7@gmail.com</p>
+
+                        <h5 data-aos="fade" data-aos-delay="400" class="mt-4">For Domestic Ticketing</h5>
+                        <p data-aos="fade" data-aos-delay="500"><i class="fa fa-phone-square"></i> 082136579945</p>
+                        <p data-aos="fade" data-aos-delay="600">Email: nasruwlohi933@gmail.com /
+                            rifaldyilham01@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom py-3">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap">
+                <!-- Footer Menu -->
+                <ul data-aos="fade-right" data-aos-delay="400" class="list-inline mb-0 footer-menu">
+                    <li class="list-inline-item"><a href="about.html">About</a></li>
+                    <li class="list-inline-item"><a href="customer.html">Customer Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Icons Section -->
+        <div class="text-center social-icons mt-4">
+            <span class="follow-text d-block mb-2">Follow Us</span>
+            <a href="https://www.instagram.com/neo_da_vierro/" target="_blank" class="icon instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/ManUtd" target="_blank" class="icon twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:callcenter@nefal-airways.com" class="icon email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/rifaldyilhm/" target="_blank" class="icon instagram"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- Footer Bottom -->
+        <p class="text-center mt-4">&copy; 2024 Nefal Airways Corporation. All Rights Reserved.</p>
+    </footer>
+
+
+
+
+    <!-- Scroll top -->
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+</body>
+
+<!-- script js -->
+<script src="assets/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/swiper/swiper-bundle.min.js"></script>
+<script src="assets/glightbox/js/glightbox.min.js"></script>
+<script src="assets/aos/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icon.png">
+    <title>Nefal Airways</title>
+
+    <!-- vendor link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Maiden+Orange&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet"/>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/corporate.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="top-bar">
+        <div class="container">
+            <ul class="top-contacts">
+                <li data-aos="fade-down" data-aos-delay="100" class="top-unhover">
+                    <p><span class="fa fa-phone-square" aria-hidden="true"></span> 082136579945 </p>
+                </li>
+                <li data-aos="fade-down" data-aos-delay="200" class="top-unhover">
+                    <p><span class="fab fa-whatsapp" aria-hidden="true"></span> 085233364701</a></p>
+                </li>
+                <li data-aos="fade-down" data-aos-delay="300" class="top-hover">
+                    <p><span class="fa fa-envelope" aria-hidden="true"></span> <a
+                            href="mailto:callcenter@nefal-airways.com">callcenter@nefal-airways.com</a></p>
+                </li>
+            </ul>
+            <ul class="top-links">
+                <li data-aos="fade-down" data-aos-delay="400"><a href="https://www.instagram.com/neo_da_vierro/" target="_blank" class="icon"><i
+                            class="fab fa-instagram" style="font-size:20px"></i></a></li>
+                <li data-aos="fade-down" data-aos-delay="500"><a href="https://twitter.com/ManUtd" target="_blank" class="icon"><i class="fab fa-twitter"
+                            style="font-size:20px"></i></a></li>
+                <li data-aos="fade-down" data-aos-delay="600"><a href="mailto:callcenter@nefal-airways.com" class="icon"><i class="fa-solid fa-envelope"
+                            style="font-size:20px"></i></a></li>
+                <li data-aos="fade-down" data-aos-delay="700"><a href="https://www.instagram.com/rifaldyilhm/" target="_blank" class="icon"><i
+                            class="fab fa-instagram" style="font-size:20px"></i></a></li>
+            </ul>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <a data-aos="zoom-in" data-aos-delay="400" class="navbar-brand" href="#"><img src="image/web.png" alt="Logo" class="logo-img"></a>
+
+            <button data-aos="fade-in" data-aos-delay="400" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li data-aos="zoom-in" data-aos-delay="100" class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li data-aos="zoom-in" data-aos-delay="200" class="nav-item"><a class="nav-link" href="#aircraft">Aircraft</a></li>
+                    <li data-aos="zoom-in" data-aos-delay="300" class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <li data-aos="zoom-in" data-aos-delay="400" class="nav-item"><a class="nav-link" href="#" id="routeNav">Route</a></li>
+                    <li data-aos="zoom-in" data-aos-delay="500" class="nav-item"><a class="nav-link" href="#" id="aviationSecurityModalTrigger">Career</a></li>
+                    <li data-aos="zoom-in" data-aos-delay="600" class="nav-item"><a class="nav-link" href="#contact">Office</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Route Section -->
+<div id="routePopup" class="popup hidden">
+    <div class="popup-content">
+        <h2 class="popup-title">Route of Nefal Airways</h2>
+        
+        <!-- Java Routes Section -->
+        <div class="route-section">
+            <h4 class="route-title">Java</h4>
+            <table class="route-table">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Depart from</th>
+                        <th>Destination 1</th>
+                        <th>Destination 2</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SOLO</td>
+                        <td>Madiun</td>
+                        <td>Surabaya</td>
+                        <td>VV</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SOLO</td>
+                        <td>Bandung</td>
+                        <td>Jakarta</td>
+                        <td>VV</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Madiun</td>
+                        <td>Solo</td>
+                        <td>Yogyakarta</td>
+                        <td>VV</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>SOLO</td>
+                        <td>Banten</td>
+                        <td>--</td>
+                        <td>VV</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Madiun</td>
+                        <td>Jakarta</td>
+                        <td>Bandung</td>
+                        <td>VV (Offline)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- International Routes Section -->
+        <div class="route-section">
+            <h4 class="route-title">International</h4>
+            <table class="route-table">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Depart from</th>
+                        <th>Destination 1</th>
+                        <th>Destination 2</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SOLO</td>
+                        <td>Uni Emirat Arab</td>
+                        <td>Turki</td>
+                        <td>VVV</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SOLO</td>
+                        <td>Brazil</td>
+                        <td>Portugal</td>
+                        <td>VVV</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Madiun</td>
+                        <td>Uni Emirat Arab</td>
+                        <td>Iran</td>
+                        <td>VVV</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Madiun</td>
+                        <td>Jepang</td>
+                        <td>Korea Selatan</td>
+                        <td>VVV</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Footer Section -->
+        <div class="popup-footer">
+            <button type="button" class="btn btn-primary" id="closePopup">Close</button>
+        </div>
+    </div>
+</div>
+    <div id="overlay" class="hidden"></div>
+
+    <!-- Career Section -->
+<div class="modal fade" id="aviationSecurityModal" tabindex="-1" aria-labelledby="aviationSecurityModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="aviationSecurityModalLabel" align="center">Aviation Security</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="tg">
+                    <tr>
+                        <td><h4><b>Persyaratan:</b></h4></td>
+                    </tr>
+                    <tr><td>1. Pria</td></tr>
+                    <tr><td>2. Usia Max 25 Tahun (Belum Menikah diutamakan)</td></tr>
+                    <tr><td>3. Pendidikan min SMA</td></tr>
+                    <tr><td>4. Mempunyai minimal License Basic Avsec dan Valid</td></tr>
+                    <tr><td>5. Pengalaman / Non Pengalaman</td></tr>
+                    <tr><td>6. Memiliki wawasan di dunia penerbangan (diutamakan)</td></tr>
+                    <tr><td>7. Bisa bekerja dalam tim</td></tr>
+                    <tr><td><h4><b>Cara Melamar:</b></h4></td></tr>
+                    <tr><td>1. Surat lamaran</td></tr>
+                    <tr><td>2. Curriculum Vitae</td></tr>
+                    <tr><td>3. Copy ID/KTP</td></tr>
+                    <tr><td>4. Photo 4x6 2 Lembar</td></tr>
+                    <tr><td>5. Avsec License</td></tr>
+                </table>
+                <tr>* Kirim Lamaran ke <a href="#">callcenter@nefal-airways.com</a></tr>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
+        <div class="header-about">
+            <h1 data-aos="fade-down" data-aos-delay="200"> < Corporate Overview > </Corporate></h1>
+        </div>
+    </section>
+
+    <div class="container-corporate">
+        <div class="content-corporate">
+            <h2 data-aos="fade-right" data-aos-delay="100">The aviation history of Nefal Airways</h2>
+            <p data-aos="fade" data-aos-delay="200">
+                Sejarah penerbangan Nefal Airways dimulai pada tahun 2024. Maskapai ini didirikan oleh dua pengusaha
+                visioner, Neo dan Rifaldy, yang bercita-cita menciptakan maskapai penerbangan yang mengutamakan
+                kenyamanan, keamanan, dan keterjangkauan. Dengan tekad yang kuat, mereka memulai operasionalnya dengan
+                armada kecil dan rute domestik terbatas.
+
+                <p data-aos="fade" data-aos-delay="200">Awalnya, penerbangan Nefal Airways berfokus pada konektivitas antar kota-kota besar di dalam negeri.
+                    Berkat layanan yang andal dan kualitas pelayanan yang unggul, Nefal Airways dengan cepat mendapatkan
+                    kepercayaan dari para penumpang. Dengan meningkatnya permintaan perjalanan udara, maskapai ini mulai
+                    memperluas jangkauannya ke wilayah internasional.</p>
+                <p data-aos="fade" data-aos-delay="200">Perkembangan Armada dan Rute
+                    Pada tahun-tahun awal operasinya, Nefal Airways menggunakan pesawat berbadan kecil untuk melayani
+                    rute domestik. Namun, seiring bertambahnya jumlah penumpang dan meningkatnya kebutuhan akan
+                    penerbangan
+                    internasional, maskapai ini mulai menambah jenis pesawat dalam armadanya. Penambahan pesawat
+                    berbadan lebar memungkinkan Nefal Airways untuk melayani penerbangan jarak jauh.</p>
+
+                <p data-aos="fade" data-aos-delay="200">Memasuki dekade kedua operasinya, Nefal Airways telah berkembang pesat dengan melayani rute
+                    internasional yang menghubungkan kota-kota besar di Asia, Timur Tengah, dan Eropa. Adapun tujuan
+                    internasional populer yang dilayani Nefal Airways mencakup destinasi utama seperti Singapura, Dubai,
+                    Tokyo, Kuala Lumpur, Jeddah, dan beberapa kota besar di Eropa.</p>
+
+                <p data-aos="fade" data-aos-delay="200">Armada Pesawat
+                    Nefal Airways mengoperasikan armada modern dan efisien dengan fokus pada keselamatan dan kenyamanan.
+                    Armada ini terdiri dari pesawat berbadan sempit dan berbadan lebar yang dilengkapi teknologi
+                    mutakhir.
+                    Maskapai ini secara rutin memperbarui armadanya untuk memastikan standar keselamatan tertinggi dan
+                    efisiensi operasional.</p>
+
+                <p data-aos="fade" data-aos-delay="200">Destinasi Internasional
+                    Saat ini, Nefal Airways melayani penerbangan ke berbagai destinasi internasional, di antaranya:
+                    <div data-aos="fade" data-aos-delay="200">
+                    <p>1. Solo <span> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 8.Arab</span></p>
+                    <p>2. Madiun<span> &emsp;&emsp;&emsp;&emsp;&emsp;9. Turki</span></p>
+                    <p>3. Yogyakarta<span> &emsp;&emsp;&emsp; 10. Brazil</span></p>
+                    <p>4. Surabaya<span> &emsp;&emsp;&emsp;&emsp;11. Portugal<span></p>
+                    <p>5. Bandung<span> &emsp;&emsp;&emsp;&emsp; 12. Iran<span></p>
+                    <p>6. Jakarta<span> &emsp;&emsp;&emsp;&emsp;&emsp; 13. Jepang<span></p>
+                    <p>7. Banten<span> &emsp;&emsp;&emsp;&emsp;&emsp; 14. Korea Selatan</span></p>
+                </div>
+                </p>
+
+
+                <p data-aos="fade" data-aos-delay="200">Destinasi Domestik
+                    Di tingkat domestik, Nefal Airways terhubung dengan lebih dari 20 kota besar dan kecil, memungkinkan
+                    akses mudah ke wilayah yang lebih terpencil dan sulit dijangkau. Layanan ini sangat penting bagi
+                    pengembangan ekonomi dan pariwisata lokal.Destinasi Domestik
+                    Di tingkat domestik, Nefal Airways terhubung dengan lebih dari 20 kota besar dan kecil, memungkinkan
+                    akses mudah ke wilayah yang lebih terpencil dan sulit dijangkau. Layanan ini sangat penting bagi
+                    pengembangan ekonomi dan pariwisata lokal.</p>
+
+                <p data-aos="fade" data-aos-delay="200">Inovasi dan Layanan Pelanggan
+                    Sejak awal berdirinya, Nefal Airways selalu berfokus pada inovasi dan layanan pelanggan. Dengan
+                    memperkenalkan sistem check-in online, pemesanan tiket berbasis aplikasi, dan layanan pelanggan
+                    24/7,
+                    maskapai ini terus meningkatkan kenyamanan pelanggan. Penumpang juga dapat menikmati fasilitas
+                    hiburan
+                    dalam penerbangan, Wi-Fi, dan menu makanan pilihan selama perjalanan.
+                </p>
+                <p data-aos="fade" data-aos-delay="200">Komitmen terhadap Keselamatan dan Keberlanjutan
+                    Keselamatan adalah prioritas utama bagi Nefal Airways. Semua pesawat yang dioperasikan menjalani
+                    inspeksi rutin dan perawatan berkala sesuai standar internasional. Selain itu, Nefal Airways
+                    berkomitmen
+                    pada keberlanjutan dengan mengadopsi praktik ramah lingkungan, seperti pengurangan emisi karbon dan
+                    pengelolaan limbah yang bertanggung jawab.</p>
+        </div>
+        <div class="sidebar">
+            <a data-aos="zoom-in" data-aos-delay="100" href="about.html">
+                <h3>About</h3>
+            </a>
+            <a data-aos="fade" data-aos-delay="400" href="corporate.html">Corporate Overview</a>
+            <a data-aos="fade" data-aos-delay="500" href="information.html">Information officer and Spokesperson</a>
+        </div>
+    </div>
+
+    <img data-aos="fade-up" data-aos-delay="200" src="image/sil.png" alt="" style="max-width: 100%;">
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Spokesperson Section -->
+                <div class="col-md-6 mb-4">
+                    <div class="spokesperson d-flex align-items-center">
+                        <img data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" src="image/owner1.jpeg" alt="Spokesperson Photo" class="profile-photo">
+                        <div data-aos="fade-right" data-aos-delay="200" class="info ms-3">
+                            <h5>Spokesperson</h5>
+                            <p>Mr. Neonardo Vierro</p>
+                            <p>(Dy. Director, Marketing Department)</p>
+                            <p>WhatsApp: 085233364701</p>
+                            <p>Email: rifaldyilham01@student.uns.ac.id</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="col-md-6 mb-4">
+                    <div class="contact d-flex align-items-center">
+                        <img data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" src="image/owner2.JPG" alt="Information Officer Photo" class="profile-photo">
+                        <div data-aos="fade-right" data-aos-delay="200" class="info ms-3">
+                            <h5>Information Officer</h5>
+                            <p>Mr. Rifaldy Ilham Nasrulloh</p>
+                            <p>(Dy. Director, Corporate Department)</p>
+                            <p>Tel: 082136579945</p>
+                            <p>Email: neonardo_vierro@student.uns.ac.id</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Ticketing Information -->
+                <div class="ticketing d-flex justify-content-center">
+                    <div class="col-12">
+                        <h5 data-aos="fade" data-aos-delay="100">For International Ticketing</h5>
+                        <p data-aos="fade" data-aos-delay="200" ><i class="fa fa-phone-square"></i> 082136579945</p>
+                        <p data-aos="fade" data-aos-delay="300">Email: lanacpx@gmail.com / neodasilva7@gmail.com</p>
+
+                        <h5 data-aos="fade" data-aos-delay="400" class="mt-4">For Domestic Ticketing</h5>
+                        <p data-aos="fade" data-aos-delay="500"><i class="fa fa-phone-square"></i> 082136579945</p>
+                        <p data-aos="fade" data-aos-delay="600">Email: nasruwlohi933@gmail.com / rifaldyilham01@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom py-3">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap">
+                <!-- Footer Menu -->
+                <ul data-aos="fade-right" data-aos-delay="400" class="list-inline mb-0 footer-menu">
+                    <li class="list-inline-item"><a href="about.html">About</a></li>
+                    <li class="list-inline-item"><a href="customer.html">Customer Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Icons Section -->
+        <div class="text-center social-icons mt-4">
+            <span class="follow-text d-block mb-2">Follow Us</span>
+            <a href="https://www.instagram.com/neo_da_vierro/" target="_blank" class="icon instagram"><i 
+                    class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/ManUtd" target="_blank" class="icon twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:callcenter@nefal-airways.com" class="icon email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/rifaldyilhm/" target="_blank" class="icon instagram"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- Footer Bottom -->
+        <p class="text-center mt-4">&copy; 2024 Nefal Airways Corporation. All Rights Reserved.</p>
+    </footer>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+</body>
+
+<!-- script js -->
+<script src="assets/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/swiper/swiper-bundle.min.js"></script>
+<script src="assets/glightbox/js/glightbox.min.js"></script>
+<script src="assets/aos/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>

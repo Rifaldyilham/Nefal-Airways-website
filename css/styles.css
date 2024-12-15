@@ -1,0 +1,995 @@
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif !important;
+    --color-primary: #42C2FF;
+}
+
+/* header */
+header {
+    background-color: #3B4371;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+.top-bar {
+    margin: auto;
+    padding: 7px 0;
+    background: linear-gradient(#42C2FF, #85F4FF);
+}
+
+ul.top-contacts,
+ul.top-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.top-contacts {
+    float: left;
+}
+
+ul.top-links {
+    float: right;
+}
+
+ul.top-contacts li {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+ul.top-links li {
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.top-bar ul.top-contacts li p,
+.top-bar ul.top-contacts li p a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.top-bar ul.top-contacts li p span {
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1px;
+    margin-right: 5px;
+}
+
+.top-bar ul.top-contacts li p a:hover {
+    color: #85F4FF;
+    text-decoration: none;
+}
+
+/* sosmed */
+.top-bar ul.top-links li a i {
+    color: #000;
+    background-color: #fff;
+    width: 37px;
+    height: 37px;
+    font-size: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+.top-bar ul.top-links li a i:hover {
+    color: #fff;
+    transform: scale(1.1);
+    transition: transform 0.7s, color 0.3s;
+}
+
+ul.top-links li a.icon:hover i.fab.fa-instagram {
+    color: #fff;
+    background: radial-gradient(circle at 30% 30%,
+            #feda75,
+            #d62976,
+            #962fbf,
+            #4f5bd5);
+}
+
+ul.top-links li a.icon:hover i.fab.fa-twitter {
+    color: #fff;
+    background-color: #1da1f2;
+}
+
+ul.top-links li a.icon:hover i.fa-solid.fa-envelope {
+    color: #fff;
+    background-color: #d44638;
+}
+
+.top-bar ul.top-contacts li p,
+.top-bar ul.top-contacts li a,
+.top-bar ul.top-links li a,
+.custom-navbar a {
+    line-height: 1;
+}
+
+/* logo nefal airways */
+.icon {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    header {
+        max-height: 180px;
+    }
+    
+    ul.top-contacts, ul.top-links {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    ul.top-contacts li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    ul.top-links {
+        margin-top: 10px;
+    }
+    
+    ul.top-links li {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        max-height: 180px;
+    }
+    
+    ul.top-contacts, ul.top-links {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    ul.top-contacts li {
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    ul.top-links {
+        margin-top: 8px;
+    }
+    
+    ul.top-links li {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+}
+
+/* navigation */
+.custom-navbar {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px); 
+    padding: 10px 20px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2); 
+    width: 100%;
+    z-index: 100;
+    max-width: 1800px;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    transition: background-color 0.3s ease; 
+}
+
+.custom-navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.custom-navbar .navbar-brand .logo-img {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.custom-navbar .navbar-brand .logo-img:hover {
+    transform: scale(1.1);
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+
+.custom-navbar .nav-link.active {
+    color: #38abe0;
+    border-bottom: 2px solid #38abe0;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #38abe0;
+    border-bottom: 2px solid #38abe0;
+}
+
+.custom-navbar .navbar-toggler {
+    border: none;
+    background: linear-gradient(125deg,
+            #42C2FF 0%,
+            #85F4FF 100%);
+    color: white;
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: none;
+    font-size: 20px;
+    color: white;
+}
+
+.custom-navbar .navbar-toggler:focus {
+    outline: none;
+}
+
+.carousel-control-prev,
+.sel-control-next {
+    z-index: 20;
+}
+
+@media (max-width: 1024px) {
+    .custom-navbar .navbar-nav .nav-link {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+/* Slider */
+.carousel-inner {
+    margin-top: -10px;
+}
+
+.carousel-inner img {
+    height: 580px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-inner img {
+        height: 200px;
+        margin-top: 8px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 30px;
+        height: 25px;
+        margin-top: 8px;
+    }
+}
+
+
+/* Booking Form */
+#bookingForm {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 60%;
+    left: 18%;
+    transform: translate(-50%, -65%);
+    z-index: 10;
+    max-width: 500px;
+    width: 25%;
+    border: 2px solid #dfe3eb;
+}
+
+#bookingForm h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333333;
+}
+
+#bookingForm .form-select,
+#bookingForm .form-control {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 50px;
+    border: 1px solid #ced4da;
+    background-color: #f7f9fc;
+}
+
+#bookingForm .form-select:focus,
+#bookingForm .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#bookingForm .btn {
+    background-color: #42C2FF;
+    color: white;
+    font-weight: bold;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+#bookingForm .btn:hover {
+    background-color: #139eb7;
+}
+
+/* Booking Flight Form */
+#manageBookingForm {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 60%;
+    left: 18%;
+    transform: translate(-50%, -108.8%);
+    z-index: 10;
+    max-width: 500px;
+    width: 25%;
+    border: 2px solid #dfe3eb;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    max-width: 200px;
+    width: 30%;
+    border: 2px solid #dfe3eb;
+}
+
+.form-container .form-select,
+.form-container .form-control {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 50px;
+    border: 1px solid #ced4da;
+    background-color: #f7f9fc;
+}
+
+.form-container .form-select:focus,
+.form-container .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-container .btn {
+    background-color: #21c8e5;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.form-container .btn:hover {
+    background-color: #0056b3;
+}
+
+.tabs {
+    margin-top: 9px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tabs button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #42C2FF;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.tabs button.active {
+    background-color: #42C2FF;
+    color: white;
+    font-weight: bold;
+}
+
+.tabs button:hover {
+    background-color: #139eb7;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    #bookingForm {
+        position: relative;
+        height: 500px;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+    #manageBookingForm {
+        position: relative;
+        height: 300px;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+}
+
+
+/* Route Section */
+body.popup-active {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1001;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup .popup-content {
+    height: 80vh;
+    overflow-y: auto;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}
+
+/* Aircraft Section */
+.container-aircraft {
+    margin-top: 100px;
+    background: linear-gradient(to bottom, #ffffff, #acf5ff);
+}
+
+.container-aircraft .section-title h2 {
+    margin-top: 100px;
+    color: #22c1c3;
+    text-align: center;
+    font-family: "Maiden Orange", serif;
+    font-size: 3rem;
+}
+
+.container-aircraft .section-title p {
+    margin-bottom: 50px;
+    color: #555;
+    text-align: center;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+}
+
+.container-aircraft .section-title span {
+    color: #42C2FF;
+}
+
+
+.gallery {
+    overflow: hidden;
+}
+
+.gallery .swiper-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #d1d1d7;
+    opacity: 1;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-primary);
+}
+
+.gallery .swiper-slide {
+    width: 287.8px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gallery .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (min-width: 640px) {
+    .gallery .swiper-wrapper {
+        padding: 40px 0;
+    }
+
+    .gallery .swiper-slide-active {
+        border: 6px solid var(--color-primary);
+        padding: 4px;
+        background: #fff;
+        z-index: 1;
+        transform: scale(1.2);
+    }
+    .glightbox {
+        width: 287.8px;
+        height: 250px;
+    }
+}
+
+/* Profile Section */
+.profile-section {
+    background: linear-gradient(to bottom, #acf5ff, #EFFFFD);
+    padding: 50px 0;
+}
+
+.profile-section .section-title {
+    font-size: 3rem;
+    color: #22c1c3;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Maiden Orange", serif;
+}
+
+.profile-section p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    text-indent: 40px;
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    margin-left: 300px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #42C2FF;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #139eb7;
+}
+
+.plane-image {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.plane-image:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+@media (max-width: 768px) {
+    .button {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .button {
+        font-size: 13px;
+        padding: 18px;
+        margin-left: 150px;
+    }
+}
+
+/* Head Office Section */
+.contact .section-title h2 {
+    color: #22c1c3;
+    text-align: center;
+    font-family: "Maiden Orange", serif;
+    font-size: 3rem;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contact .info-item {
+    background: #f4f4f4;
+    padding: 30px;
+    height: 100%;
+}
+
+.contact .info-item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 0;
+    color: #fff;
+    background: linear-gradient(125deg,
+    #42C2FF 0%,
+    #85F4FF 100%);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.contact .info-item h3 {
+    font-size: 20px;
+    color: #6c757d;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.contact .info-item p {
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.contact .info-item .social-links a {
+    font-size: 24px;
+    display: inline-block;
+    color: rgba(55, 55, 63, 0.7);
+    line-height: 1;
+    margin: 4px 6px 0 0;
+    transition: 0.3s;
+}
+
+.contact .info-item .social-links a:hover {
+    color: var(--color-primary);
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #eeeeee;
+    color: #333333;
+    font-size: 14px;
+}
+
+.follow-text {
+    font-size: 14px;
+    margin-right: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+    display: inline-block;
+    color: #333333;
+}
+
+.footer h5 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.profile-photo {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.spokesperson,
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.spokesperson {
+    justify-content: flex-start;
+}
+
+.footer .contact {
+    justify-content: flex-end;
+}
+
+
+.info {
+    margin-left: 15px;
+}
+
+.info h5 {
+    margin-bottom: 5px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+    .spokesperson, 
+    .contact {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .profile-photo {
+        margin-bottom: 15px;
+        margin-left:30px ;
+    }
+
+    .info {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .spokesperson, 
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 15px;
+        margin-left:30px ;
+    }
+
+    .info {
+        margin-left: 0;
+    }
+}
+
+.ticketing {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ticketing h5 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.ticketing p {
+    margin: 0;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.footer-menu {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: #343a40;
+    transition: color 0.3s ease;
+}
+
+.footer-menu li a:hover {
+    color: #38abe0;
+    border-bottom: 2px solid #38abe0;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #343a40;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icons .icon.instagram:hover {
+    background: radial-gradient(circle at 30% 30%,
+            #feda75,
+            #d62976,
+            #962fbf,
+            #4f5bd5);
+}
+
+.social-icons .icon.twitter:hover {
+    background-color: #1da1f2;
+}
+
+.social-icons .icon.email:hover {
+    background-color: #d44638;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    color: #343a40;
+    font-size: 16px;
+}
+
+.footer-bottom ul li a {
+    margin-right: 25px;
+}
+
+
+/* Scroll Bar */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    visibility: hidden;
+    opacity: 0;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #85F4FF;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scroll-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+}
+
+.scroll-top:hover {
+    background-color: #B8FFF9;
+    transform: scale(1.1);
+}
+
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,118 @@
+/*--------------------------------------------------------------
+# Stats Counter Section
+--------------------------------------------------------------*/
+.stats-counter {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../image/background1.jpg") center center;
+    background-size: cover;
+    padding: 150px 0;
+    
+}
+
+@media (min-width: 1365px) {
+    .stats-counter {
+        background-attachment: fixed;
+    }
+}
+
+.header-about h1 {
+    color: #B8FFF9;
+    text-align: center;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.stats-counter .stats-item {
+    padding: 30px;
+    width: 100%;
+}
+
+.stats-counter .stats-item span {
+    font-size: 48px;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+}
+
+.stats-counter .stats-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.content-about {
+    margin: 70px 100px 300px 200px;
+}
+
+.about-links {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    gap: 15px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: "Maiden Orange", serif;
+}
+
+.about-link {
+    display: block;
+    padding: 15px;
+    padding-left: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #22c1c3;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+}
+
+.about-link:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .stats-counter {
+        height: 300px;
+    }
+
+    .header-about h1 {
+        font-size: 24px;
+    }
+
+    .stats-counter .stats-item {
+        padding: 20px;
+        margin: 15px auto;
+        max-width: 250px;
+    }
+
+    .stats-counter .stats-item span {
+        font-size: 36px; /* Ukuran angka lebih kecil */
+    }
+
+    .stats-counter .stats-item p {
+        font-size: 14px; /* Ukuran teks lebih kecil */
+    }
+
+    .content-about {
+        margin: 30px auto;
+        padding: 0 10px;
+    }
+
+    .about-links {
+        gap: 10px;
+    }
+
+    .about-link {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
